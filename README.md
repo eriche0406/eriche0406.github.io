@@ -1,2 +1,2 @@
 # eriche0406.github.io
-Personal website
+Personal website for Eric He

@@ -1,0 +1,29 @@
+body {
+    background-color: #d9fdd3;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000900;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+  }
+  
+  .card {
+    cursor: pointer;
+  }
+  
+  .collapse-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .collapse-section.open {
+    max-height: 300px;
+  }
