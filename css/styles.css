@@ -1,14 +1,15 @@
 body {
     background-color: #d9fdd3;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 20px;
   }
   
   h1, h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: #000900;
+    color: #0a0a0a;
   }
+
   
   .navbar-brand {
     font-weight: 700;
@@ -27,3 +28,19 @@ body {
   .collapse-section.open {
     max-height: 300px;
   }
+
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .footer-divider {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    border: 0;
+    border-top: 2px solid #0f1010;
+    opacity: 0.5;
+  }
+  
