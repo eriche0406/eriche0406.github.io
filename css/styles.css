@@ -115,12 +115,12 @@ body {
     letter-spacing: 0.25px;
   }
   
-  /* Extra space above the "Previously" heading */
+  /* extra space above the "previously" heading */
   .about-section .mt-4 {
     margin-top: 1rem !important;
   }
   
-  /* Add more space below the name heading */
+  /* add more space below the name heading */
     .container.text-center h1 {
         margin-bottom: 0.75rem;
     }
