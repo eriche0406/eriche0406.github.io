@@ -57,4 +57,12 @@ body {
   .card a:hover {
     text-decoration: underline;
   }
+
+  .section-divider {
+    width: 60%;
+    border: 0;
+    border-top: 3px solid #040404;
+    margin: 15px auto 25px auto;
+    opacity: 0.6;
+  }
   
