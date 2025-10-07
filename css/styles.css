@@ -1,5 +1,5 @@
 body {
-    background-color: #f5efbf;
+    background-color: #faf6d7;
     font-family: 'Inter', sans-serif;
     padding: 20px;
   }
@@ -77,7 +77,7 @@ body {
   .custom-list {
     list-style: disc;
     color: #0a0a0a;
-    padding-left: 1.25rem;
+    padding-left: 1.1rem;
   }
   
   .custom-list li {
