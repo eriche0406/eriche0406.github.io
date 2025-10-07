@@ -77,7 +77,7 @@ body {
   .custom-list {
     list-style: disc;
     color: #0a0a0a;
-    padding-left: 1.1rem;
+    padding-left: 0.8rem;
   }
   
   .custom-list li {
