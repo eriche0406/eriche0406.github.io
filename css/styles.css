@@ -75,27 +75,15 @@ body {
   }
   
   .custom-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1.2rem;
+    list-style: disc;
+    color: #0a0a0a;
+    padding-left: 1.5rem;
   }
   
   .custom-list li {
-    margin-bottom: 2rem;
-    padding-left: 1.2rem;
-    position: relative;
-    font-size: 0.8rem;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-  }
-  
-  .custom-list li::before {
-    content: "•";
-    color: #0a0a0a;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
   
   /* Extra space above the "Previously" heading */
