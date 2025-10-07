@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -54,6 +54,82 @@
     </ul>
   </div>
 
+  <section id="projects" class="container mt-5">
+    <h1 class="text-center mb-4">Projects</h1>
+    <div class="project-list">
+      <div class="card shadow mb-4" onclick="toggleCard(event, this)">
+        <div class="card-body">
+          <h5 class="card-title">NFL and NBA Sports Trading Pipeline</h5>
+          <div class="collapse-section open">
+            <p class="card-text">
+                <p>Developed a profitable sports trading pipeline that predicts NFL/NBA player performance and betting outcomes.
+                    Built automated web scraping to manage large-scale NFL/NBA statistics and designed a custom ensemble model gradient that achieved over 65% accuracy in Over/Under player prop predictions —
+                    significantly surpassing the breakeven threshold. Additionally, engineered an optimized betting strategy to manage risk
+                    and maintain consistent profitability across varying bankroll sizes.
+                  </p>
+                  <p>
+                    Currently not open-source. Paper discussing the model's edge and overall pipeline along with historical portfolio results of the sports trading pipeline below.
+                  </p>
+              </p>
+              <p class="technologies"><strong></strong> Python, Selenium, TensorFlow, MongoDB, Flask, HTML/JS</p>
+              <a href="files/sports_trading_report.pdf" target="_blank" class="btn btn-dark btn-sm">Paper</a>
+            <a href="https://ehe.pythonanywhere.com/" target="_blank" class="btn btn-dark btn-sm">Portfolio Results</a>
+        </div>
+        </div>
+      </div>
+  
+      <div class="card shadow mb-4" onclick="toggleCard(event, this)">
+        <div class="card-body">
+          <h5 class="card-title">Practical Adversarial Attacks on Stochastic Bandits</h5>
+          <div class="collapse-section open">
+            <p class="card-text">
+                <p>
+                    Developed realistic implementations of novel adversarial attack algorithms against stochastic multi-armed bandits within recommender systems. 
+                    Designed a novel fake-data injection algorithm with theoretical guarantees on attack efficacy. 
+                    Performed extensive experiments showing significant amount of target arm pulls under realistic threat scenarios, thus misleading the recommender.
+                  </p>
+              <p class="technologies"><strong></strong> Python, NumPy</p>
+            <a href="https://arxiv.org/abs/2505.21938" target="_blank" class="btn btn-dark btn-sm">Paper</a>
+            <a href="https://github.com/richardhoff88/online_learning_torank" target="_blank" class="btn btn-dark btn-sm">Source Code</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card shadow mb-4" onclick="toggleCard(event, this)">
+        <div class="card-body">
+          <h5 class="card-title">Pokemon AI Bot</h5>
+          <div class="collapse-section open">
+            <p class="card-text">
+                <p>
+                Developed a competitive Pokémon battle simulator in Python with a Discord bot interface, running 30x faster than the official Pokémon Showdown API.
+                Engineered a specialized Monto Carlo Tree Search algorithm for a bot to optimally play Pokémon battles from any starting state (95%+ win rate against a random move algorithm)
+                </p>
+                <p>
+                Currently not open-source. Bot demo and paper currently in the works.
+                </p>
+              <p class="technologies"><strong></strong> Python, Javascript, Requests, Discord</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="card shadow mb-4" onclick="toggleCard(event, this)">
+        <div class="card-body">
+          <h5 class="card-title">Mario Battle Royale Game</h5>
+          <div class="collapse-section open">
+            <p class="card-text">
+                <p>
+                Coded a physics sandbox from scratch in C, incorporating classical force simulations, collision detection, and interactive keyboard/mouse inputs.
+                Created a physics-based multiplayer Mario battle royale game with power-up features, deployed on Emscripten.
+                </p>
+              <p class="technologies"><strong></strong> C, Esmcripten, SDL2, HTML</p>
+              <a href="https://github.com/eriche0406/mario-battle-royale" target="_blank" class="btn btn-dark btn-sm">Source Code</a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
   <footer class="footer mt-5">
     <hr class="footer-divider">
     <p>© 2025 Eric He</p>
