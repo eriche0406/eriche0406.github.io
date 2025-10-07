@@ -82,8 +82,10 @@ body {
   
   .custom-list li {
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
   }
   
   /* Extra space above the "Previously" heading */
