@@ -28,112 +28,116 @@
     </div>
   </nav>
 
-  <header class="container text-center hero-section">
-    <h1>Eric He</h1>
-    <p class="lead">CS @ Caltech | Interested in Machine Learning (ML), Robotics, AI Safety, and Sports Analytics</p>
-    <hr class="section-divider mx-auto">
+  <header class="container hero-section">
+    <div class="hero-copy">
+      <h1>Eric He</h1>
+      <p class="lead">CS @ Caltech | Interested in ML, Robotics, AI Safety, and Sports Analytics</p>
+    </div>
   </header>
   
   <main>
-  <section class="container about-section mt-5">
-    <p>
-      <strong>Currently</strong>:
-    </p>
-    <ul class="custom-list">
-      <li>Studying Computer Science at the California Institute of Technology (Caltech)</li>
-      <li>Developing fraud detection model and tooling @ Capital One</li>
-      <li>Building models for football analysis @ Detroit Lions</li>
-      <li>Working on humanoid motion and control for moving-object interaction @ Caltech ARCL</li>
-    </ul>
+    <section class="container about-section mt-5">
+      <div class="experience-grid">
+        <div class="experience-group">
+          <p>
+            <strong>Currently</strong>:
+          </p>
+          <ul class="custom-list">
+            <li>Studying Computer Science at Caltech</li>
+            <li>Developing long-running revenue agents @ Rox</li>
+            <li>Building models for football analysis @ Detroit Lions</li>
+            <li>Working on humanoid motion and control for moving-object interaction @ Caltech ARCL</li>
+          </ul>
+        </div>
 
-    <p class="mt-4"><strong>Previously</strong>:</p>
-    <ul class="custom-list">
-        <li>Developed adversarial attack algorithms in recommender systems with Prof. Jinhang Zuo</li>
-        <li>Developed novel bipartite graph alignment methods with Prof. Daniel Cullina @ Caltech SURF</li>
-        <li>Built predictive models and data pipelines for sports trading</li>
-        <li>Improved efficiency of object retrieval in a cluttered workspace @ Rutgers Algorithmic and Control Lab</li>
-    </ul>
-  </section>
+        <div class="experience-group">
+          <p><strong>Previously</strong>:</p>
+          <ul class="custom-list">
+            <li>Developed adversarial attack algorithms in recommender systems with Prof. Jinhang Zuo</li>
+            <li>Developed novel bipartite graph alignment methods with Prof. Daniel Cullina @ Caltech SURF</li>
+            <li>Built predictive models and data pipelines for sports trading</li>
+            <li>Developed heuristic and agentic fraud detection models @ Capital One</li>
+            <li>Improved efficiency of object retrieval in a cluttered workspace @ Rutgers Algorithmic and Control Lab</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <hr class="section-divider mx-auto">
-
-
-  <section id="projects" class="container mt-5">
-    <h1 class="text-center mb-4">Projects</h1>
-    <div class="project-list">
-      <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
-        <div class="card-body">
-          <h5 class="card-title">NFL and NBA Sports Trading Pipeline</h5>
-          <div class="collapse-section open">
-            <p class="card-text">Developed a profitable sports trading pipeline that predicts NFL/NBA player performance and betting outcomes.
-              Built automated web scraping to manage large-scale NFL/NBA statistics and designed a custom ensemble model gradient that achieved over 65% accuracy in Over/Under player prop predictions —
-              significantly surpassing the breakeven threshold. Additionally, engineered an optimized betting strategy to manage risk
-              and maintain consistent profitability across varying bankroll sizes.
-            </p>
-            <p class="card-text">
-              Currently not open-source. Paper discussing the model's edge and overall pipeline along with historical portfolio results of the sports trading pipeline below.
-            </p>
-            <p class="technologies"><strong></strong> Python, Selenium, TensorFlow, MongoDB, Flask, HTML/JS</p>
-            <div class="project-actions">
-              <a href="files/sports_trading_report.pdf" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Paper</a>
-              <a href="https://ehe.pythonanywhere.com/" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Portfolio Results</a>
+    <section id="projects" class="container mt-5">
+      <h1 class="section-title mb-4">Projects</h1>
+      <div class="project-list">
+        <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
+          <div class="card-body">
+            <h5 class="card-title">NFL and NBA Sports Trading Pipeline</h5>
+            <div class="collapse-section open">
+              <p class="card-text">Developed a profitable sports trading pipeline that predicts NFL/NBA player performance and betting outcomes.
+                Built automated web scraping to manage large-scale NFL/NBA statistics and designed a custom ensemble model gradient that achieved over 65% accuracy in Over/Under player prop predictions —
+                significantly surpassing the breakeven threshold. Additionally, engineered an optimized betting strategy to manage risk
+                and maintain consistent profitability across varying bankroll sizes.
+              </p>
+              <p class="card-text">
+                Currently not open-source. Paper discussing the model's edge and overall pipeline along with historical portfolio results of the sports trading pipeline below.
+              </p>
+              <p class="technologies"><strong></strong> Python, Selenium, TensorFlow, MongoDB, Flask, HTML/JS</p>
+              <div class="project-actions">
+                <a href="files/sports_trading_report.pdf" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Paper</a>
+                <a href="https://ehe.pythonanywhere.com/" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Portfolio Results</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
   
-      <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
-        <div class="card-body">
-          <h5 class="card-title">Practical Adversarial Attacks on Stochastic Bandits</h5>
-          <div class="collapse-section open">
-            <p class="card-text">
-              Developed realistic implementations of novel adversarial attack algorithms against stochastic multi-armed bandits within recommender systems.
-              Designed a novel fake-data injection algorithm with theoretical guarantees on attack efficacy.
-              Performed extensive experiments showing significant amount of target arm pulls under realistic threat scenarios, thus misleading the recommender.
-            </p>
-            <p class="technologies"><strong></strong> Python, NumPy</p>
-            <div class="project-actions">
-              <a href="https://arxiv.org/abs/2505.21938" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Paper</a>
-              <a href="https://github.com/richardhoff88/online_learning_torank" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Source Code</a>
+        <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
+          <div class="card-body">
+            <h5 class="card-title">Practical Adversarial Attacks on Stochastic Bandits</h5>
+            <div class="collapse-section open">
+              <p class="card-text">
+                Developed realistic implementations of novel adversarial attack algorithms against stochastic multi-armed bandits within recommender systems.
+                Designed a novel fake-data injection algorithm with theoretical guarantees on attack efficacy.
+                Performed extensive experiments showing significant amount of target arm pulls under realistic threat scenarios, thus misleading the recommender.
+              </p>
+              <p class="technologies"><strong></strong> Python, NumPy</p>
+              <div class="project-actions">
+                <a href="https://arxiv.org/abs/2505.21938" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Paper</a>
+                <a href="https://github.com/richardhoff88/online_learning_torank" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
+          <div class="card-body">
+            <h5 class="card-title">Pokemon AI Bot</h5>
+            <div class="collapse-section open">
+              <p class="card-text">
+                Developed a competitive Pokémon battle simulator in Python with a Discord bot interface, running 30x faster than the official Pokémon Showdown API.
+                Engineered a specialized Monto Carlo Tree Search algorithm for a bot to optimally play Pokémon battles from any starting state (95%+ win rate against a random move algorithm)
+              </p>
+              <p class="card-text">
+                Currently not open-source. Bot demo and paper currently in the works.
+              </p>
+              <p class="technologies"><strong></strong> Python, Javascript, Requests, Discord</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
+          <div class="card-body">
+            <h5 class="card-title">Mario Battle Royale Game</h5>
+            <div class="collapse-section open">
+              <p class="card-text">
+                Coded a physics sandbox from scratch in C, incorporating classical force simulations, collision detection, and interactive keyboard/mouse inputs.
+                Created a physics-based multiplayer Mario battle royale game with power-up features, deployed on Emscripten.
+              </p>
+              <p class="technologies"><strong></strong> C, Esmcripten, SDL2, HTML</p>
+              <div class="project-actions">
+                <a href="https://github.com/eriche0406/mario-battle-royale" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Source Code</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
-        <div class="card-body">
-          <h5 class="card-title">Pokemon AI Bot</h5>
-          <div class="collapse-section open">
-            <p class="card-text">
-              Developed a competitive Pokémon battle simulator in Python with a Discord bot interface, running 30x faster than the official Pokémon Showdown API.
-              Engineered a specialized Monto Carlo Tree Search algorithm for a bot to optimally play Pokémon battles from any starting state (95%+ win rate against a random move algorithm)
-            </p>
-            <p class="card-text">
-              Currently not open-source. Bot demo and paper currently in the works.
-            </p>
-            <p class="technologies"><strong></strong> Python, Javascript, Requests, Discord</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card project-card shadow mb-4" onclick="toggleCard(event, this)">
-        <div class="card-body">
-          <h5 class="card-title">Mario Battle Royale Game</h5>
-          <div class="collapse-section open">
-            <p class="card-text">
-              Coded a physics sandbox from scratch in C, incorporating classical force simulations, collision detection, and interactive keyboard/mouse inputs.
-              Created a physics-based multiplayer Mario battle royale game with power-up features, deployed on Emscripten.
-            </p>
-            <p class="technologies"><strong></strong> C, Esmcripten, SDL2, HTML</p>
-            <div class="project-actions">
-              <a href="https://github.com/eriche0406/mario-battle-royale" target="_blank" rel="noopener" class="btn btn-dark btn-sm">Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+    </section>
   </main>
 
   <footer class="footer mt-5">
